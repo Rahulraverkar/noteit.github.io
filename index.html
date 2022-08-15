@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Note it</title>
+    <link rel="stylesheet" href="/noteit.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+</head>
+
+<body>
+
+
+<!-- ----------------------------------------about---------------------------------- -->
+
+<div id="about">
+    <div id='aboutup'>
+        <div id='about1'>
+            <div id="aboutin1">About Project</div>
+            <div class="arrow" id="forwardbtn"><i class="material-icons" id="forwardarrow">arrow_back_ios</i></div>
+            <div id="aboutin2">
+                </div>
+        </div>
+        <div id='about2'>
+            <div class="arrow" id="backarrow"><i class="material-icons" id="backarrow">arrow_forward_ios</i></div>
+
+        </div>
+    </div>
+    <div id="about3">
+        <div id="about3in">
+        <div id="pageselect1" class="pageselect"></div>
+        <div id="pageselect2" class="pageselect"></div>
+        <div id="pageselect3" class="pageselect"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- -------------------------change password box--------------------------------- -->
+
+<div id="passchbox">
+    <div id="passchboxhead"><div>Change Passward</div></div>
+    <div class="enterchangepass">Enter New Passward</div>
+    <div class="enterpasstxtbox"><div><input type="password" class="newpassch" id="newpassch1"></div><div><i class="material-icons" id="seepass1">visibility_off</i></div></div>
+    <div class="enterchangepass">Conferm Passward</div>
+    <div class="enterpasstxtbox"><input type="password" class="newpassch" id="newpassch2"></div>
+    <div id="shownote">passward mismatch</div>
+    <div id="btndivch"><div class="changepassbtn" id="changepassbtn1"><i class="material-icons" id="chbtn1">close</i></div><div class="changepassbtn" id="changepassbtn2"><i class="material-icons" id="chbtn2">done</i></div></div>
+</div>
+
+
+
+<!-- --------------------------------search------------------------------------------ -->
+
+<div id="searchbox">
+<div id="searchhead">
+    <div id="search1side"><div id="filter"><i class="material-icons" id="filterlogo">filter_alt</i><div id="filterapplyed">Filter</div></div>
+    <div id="filterbox">
+        <div id="filterbox1" class="filterbox">Newest First</div>
+        <div id="filterbox2" class="filterbox">Oldest First</div>
+        <div id="filterbox3" class="filterbox">Favorite</div>
+        <!-- <div id="filterbox4" class="filterbox">Favorite</div> -->
+    </div>
+
+</div>
+    <div id="search2side">
+        <div id="searchcat">
+            <div id="cat2"><i class="material-icons" id="expandlogo">expand_more</i></div>
+            <div id="category">Select Category</div>
+            <div id="searchcatbox">
+                <div id="catbox1" class="catbox">Notes</div>
+                <div id="catbox2" class="catbox">Headings</div>
+                <div id="catbox3" class="catbox">Date</div>
+                
+            </div>
+        </div>
+    <div id="searchbox1">
+        <input type="text" id="searchtxt" placeholder="Search">
+        <div id="search2"><i class="material-icons" id="searchlogo">search</i></div>
+    </div>
+</div>
+</div>
+<div id="searchcards"></div>
+    
+
+</div>
+
+
+
+
+
+<!-- ---------------------------------------edit box--------------------------------------- -->
+
+<div id="edittxt">
+    <div id="editcard">
+        <div id="editcardtop"><div id="editclose"><i class="material-icons">close</i></div></div>
+        <div id="editheading">
+            <input type="text" id="editheadingtxt" placeholder="ADD HEADING" maxlength="10">
+            
+         
+        </div>
+        <div id="editcontent"><textarea id="editcontenttxt" placeholder="ADD CONTENT HERE"></textarea></textarea></div>
+        <div id="editbtn"><div id="editbtnad">Edit</div></div>
+    </div>
+    </div>
+
+<!-- -------------------------------------open note-------------------------- -->
+<div id="opennote1">
+    <div id="opennoteup">
+        <div id="opennote">
+    <div id="clsdiv"><div id="cansbtn"><i class="material-icons">close</i></div></div>
+
+    <div id="hedbox">
+        <div id="dates"></div>
+        <div id="useless"></div>
+        <div id="hedbox1"></div><div id="numbox"></div></div>
+    <div id="cont"></div>
+</div>
+</div>
+<div>
+<div id="opennoteoption1" class="opennoteoptions">Delete<i class="material-icons" id="del">delete</i>
+</div>
+<div id="opennoteoption2" class="opennoteoptions">Edit<i class="material-icons" id="edn">edit_note</i>
+</div>
+<div id="opennoteoption3" class="opennoteoptions">Favourite<i class="material-icons" id="fav">favorite</i>
+</div>
+</div>
+</div>
+
+
+
+<!-- -------------------------------------add new card -------------------------- -->
+<div id="uptxt">
+<div id="addcard">
+    <div id="addcardtop"><div id="addclose"><i class="material-icons">close</i></div></div>
+    <div id="addheading">
+        <input type="text" id="addheadingtxt" placeholder="ADD HEADING" maxlength="10">
+        
+     
+    </div>
+    <div id="addcontent"><textarea id="addcontenttxt" placeholder="ADD CONTENT HERE"></textarea></textarea></div>
+    <div id="addbtn"><div id="btnad">Add Note</div></div>
+</div>
+</div>
+
+<!-- ----------------------------------------edit box------------------------ -->
+
+<div id="editbox1"><div id="edname">Name</div><div id="edbody"></div><div id="edbtn"><div id="edbtnt"></div><div class="psbtn" id="edbtn2">Close</div></div></div>
+
+<!-- ------------------------------------------------blur bg---------------------------- -->
+<div id="blurbg"></div>
+<div id="blurbg1"></div>
+<div id="blurbg2"></div>
+<!-- ----------------------------------------profile passwardcheck------------------>
+
+<div id="passcheck"><div id="passhead">Enter passward</div><div id="passbody"><input type="password" spellcheck="false" id="passin"><div id="invcre">Invelid Credentials</div></div><div id="passbtn"><div id="passbtne"></div><div class="psbtn" id="passbtn2">Close</div></div></div>
+
+
+<!-----------------------------------------------alert box------------------------>
+
+<div id="alertbox"><div id="alerttxt">Passward example Rahul@123</div><div id="alertcancelbtn"><i class="material-icons">close</i></div></div>
+
+
+<!-- -----------------------------------conferm box--------------------------------->
+<div id="confermbox"><div id="confermhead">Confirm</div><div id="confermtxt"></div><div id="confermbtn"><div class="yesnobtn" id="yesbtn">YES</div><div class="yesnobtn" id="nobtn">NO</div></div></div>
+
+
+
+    <!-- --------------------------------login 1st page----------------------------------------------->
+    <div id="loginpagebg1">
+        <div class="design2"></div>
+        <div class="design1"></div>
+    </div>
+    <div id="loginpage1">
+        <div id="page1">
+            <div id="pagehead1">Login</div>
+            <div id="pageheaddiv2">
+                <div id="greet">User Id<input type="text" class="logintxt" id="loginid"
+                        spellcheck="false">Passward<input type="password" class="logintxt" id="passward" spellcheck="false">
+                </div>
+                <div id="btns">
+                    <div id="chkdiv1"><input type="checkbox" id="rememberme1">Remember Me</div>
+                    <div id="loginnote">Invalid credentials</div>
+                    <div id="loginbtn">Login</div>
+                </div>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="pagehead2">register</div>
+            <div id="lowerdiv">
+                <div id="name" class="regdiv">NAME<input type='text' id="nametxt" class="txtenter" spellcheck="false">
+                </div>
+                <div id="lastname" class="regdiv">Last NAME<input type='text' id="lastnametxt" class="txtenter"
+                        spellcheck="false"></div>
+                <div id="dateofbirthdiv" class="regdiv">Date of Birth<input type='date' id="dateofbirth" class="txtenter"
+                        max="2013-01-01" value="1997-10-29"></div>
+                <div id="emailiddiv" class="regdiv">Gmail<input type='email' id="emailid" class="txtenter"
+                        spellcheck="false"></div>
+                <div id="newpasswarddiv" class="regdiv">Create Passward <div id="innewpasswarddiv"><input type='password' id="newpassward"
+                         spellcheck="false"><div id="visdiv"><i class="material-icons" id="seepass">visibility_off</i></div></div></div>
+                <div id="regbtndiv">
+                    <!-- <div id="seepass"><i class="material-icons">visibility</i></div> -->
+                    <div id="chkdiv"><input type="checkbox" id="rememberme">Remember Me</div>
+                    <din id="regbtn">
+                        <p id="regtxt">REGISTER</p>
+                        <div id="loder"></div>
+                        <div id="tickdiv"><i class="material-icons" id="tick">check_circle</i></div>
+                    </din>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------------------setting box--------------------------------------------- -->
+    <div id="settingdiv">
+        <div id="sethead">
+            <div id="headingdiv">
+                <h6>Settings</h6>
+            </div>
+            <div id="div1">
+                <div id="setting_close">
+                    <i class="material-icons" id="settingclose">close</i>
+
+                </div>
+            </div>
+        </div>
+        <div id="settingoptions"><span class="settingoption" id="settingoption1">Profile</span><span
+                class="settingoption" id="settingoption2">General</span><span class="settingoption"
+                id="settingoption3">Security</span></div>
+        <div id="settingcolom1"></div>
+
+
+
+        <div id="settingpalet1">
+            <div class="settingcolom">
+                <div class="userdp" id="userdp">
+                    <i class="material-icons" id="panelicon1">person</i>
+                </div>
+            </div>
+            <div class="settingcolom">
+                <div class="settingrow" id="nameupdiv">
+                    <div id="namediv">
+                        <div id="fullname">NAME </div>
+                        <div class="user_content" id="username">Rahul</textarea>
+                        </div>
+                    </div>
+                    <div class="editbtn" id="editbtn1"><i class="material-icons" style="font-size: 30px">edit</i></div>
+                </div>
+                <div class="settingrow" id="nameupdiv">
+                    <div id="namediv">
+                        <div id="fullname">LASTNAME</div>
+                        <div class="user_content" id="usersurname">Raverkar</div>
+                    </div>
+                    <div class="editbtn" id="editbtn2"><i class="material-icons" style="font-size: 30px">edit</i></div>
+                </div>
+            </div>
+            <div class="settingcolom">
+                <div class="settingrow" id="nameupdiv">
+                    <div id="namediv">
+                        <div id="fullname">DATE OF BIRTH (YYYY-MM-DD)</div>
+                        <div class="user_content" id="dob6">29/10/1997</div>
+                    </div>
+                    <div class="editbtn" id="editbtn3"><i class="material-icons" style="font-size: 30px">edit</i></div>
+                </div>
+                <div class="settingrow" id="nameupdiv">
+                    <div id="namediv">
+                        <div id="fullname">AGE</div>
+                        <div class="user_content" id="age">25</div>
+                    </div>
+                    <div class="editbtn" id="editbtn4"><i class="material-icons" style="font-size: 30px">edit</i></div>
+                </div>
+            </div>
+            <div class="settingcolom">
+                <div class="settingrow" id="nameupdiv">
+                    <div id="namediv">
+                        <div id="fullname">GMAIL</div>
+                        <div class="user_content" id="gmail">abc@gmail.com</div>
+                    </div>
+                    <div class="editbtn" id="editbtn5"><i class="material-icons" style="font-size: 30px">edit</i></div>
+                </div>
+                <div class="settingrow" id="nameupdiv">
+                    <div id="namediv">
+                        <div id="fullname">MEMBERSHIP</div>
+                        <div class="user_content" id="membership">Basic-Free</div>
+                    </div>
+                    <div class="editbtn" id="editbtn6"><i class="material-icons" style="font-size: 30px">edit</i></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="settingpalet2">
+            <div class="settingcolom1">
+                <div class="userdp" id="generaldp">
+                    <i class="material-icons" id="panelicon2">settings</i>
+                </div>
+            </div>
+            <div class="settingcolom1">
+                <div class="settingrow menu_gopt_div" ><div id="menutxt" class="menutxtpalet"> Menu color</div><div><input type="color" id="menucolor" class="menucolorpaletset" value="#00eeff" ></div></div>                
+                <div class="settingrow menu_gopt_div" id="webclrdiv"><div id="webtxt" class="menutxtpalet"> Background Color</div><div><input type="color" id="webcolor" class="menucolorpaletset" value='#ffffff'></div></div>
+            </div>
+            <div class="settingcolom1">
+                <div class="settingrow menu_gopt_div">
+                    <div class="menutxtpalet">Auto Change Background</div>
+                    <div class="menucolorpaletset">
+                        <div class="keyholder" id="keyholder1">
+                            <div class="keyline" id="keyline1"></div>
+                            <div class="keycircle" id="keycircle1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="settingrow"></div>
+            </div>
+            <div class="settingcolom1">
+                <div class="settingrow"></div>
+                <div class="settingrow" id="defaulset">Defalt Setting</div>
+            </div>
+            <div class="settingcolom1">
+                <div class="applybtn" id="genapply">APPLY</div>
+                
+            </div>
+        </div>
+
+
+        <div id="settingpalet3">
+            <div class="settingcolom1">
+                <div class="userdp" id="securitydp">
+                    <i class="material-icons" id="panelicon3"> health_and_safety</i>
+                </div>
+            </div>
+            <div class="settingcolom1">
+                <div class="settingrow menu_gopt_div">
+                    <div class="menutxtpalet">Note preview blur</div>
+                    <div class="menucolorpaletset">
+                        <div class="keyholder" id="keyholder2">
+                            <div class="keyline" id="keyline2"></div>
+                            <div class="keycircle" id="keycircle2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="settingrow menu_gopt_div">
+                    <div class="menutxtpalet">Passward to edit</div>
+                    <div class="menucolorpaletset">
+                        <div class="keyholder" id="keyholder3">
+                            <div class="keyline" id="keyline3"></div>
+                            <div class="keycircle" id="keycircle3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settingcolom1">
+                <div class="settingrow"></div>
+                <div class="settingrow"></div>
+            </div>
+            <div class="settingcolom1">
+                <div class="settingrow"></div>
+                <div class="settingrow menu_gopt_div" id="changepassclik"><div class="menutxtpalet">Change Passward</div></div>
+            </div>
+            <div class="settingcolom1">
+                <div class="applybtn" id="applybtnpt3">APPLY</div>
+
+            </div>
+        </div>
+
+        <!-- --------------------------------menu bar--------------------------------------------- -->
+
+
+    </div>
+    <div id="menubar">
+        <ul>
+            <div id="upcurv"></div>
+            <li class="menucontent" id="u1">Home<div id="homelogo"><i class="material-icons" class="menuicons">home</i></div>
+            </li>
+            <div class="bothcurv"></div>
+            <li class="menucontent" id="u2">Settings<div id="settinglogo"><i class="material-icons" class="menuicons">settings</i></div>
+            </li>
+            <div class="bothcurv"></div>
+            <li class="menucontent" id="u3">About us<div id="abouthomelogo"><i class="material-icons" class="menuicons">groups</i></div>
+            </li>
+            <div class="bothcurv"></div>
+            <li class="menucontent" id="u4">Contect us<div id="contecthomelogo"><i class="material-icons" class="menuicons">support_agent</i></div>
+            </li>
+            <div class="bothcurv"></div>
+            <li class="menucontent" id="u5">Log Out<div id="devhomelogo"><i class="material-icons" class="menuicons">logout</i></div>
+            </li>
+            <div id="downcurv"></div>
+
+        </ul>
+    </div>
+
+
+    <!-- --------------------------------header--------------------------------------------- -->
+
+
+
+    <header>
+        <div id="headdiv1"><div id="serch"><i class="material-icons" id="searchlogo1">search</i></div></div>
+        <div id="headdiv2">
+            <p>Note It</p>
+            <div id="menulogo"><i class="material-icons" style="font-size: 30px" id="menulogo1">menu</i></div></div>
+        </div>
+    </header>
+    <main>
+
+
+        <!-- --------------------------------main div start--------------------------------------------- -->
+
+
+
+        <div id="maindiv">
+            
+            <div id="maindivout">
+            <div id="addnotebox">
+                <div ><i class="material-icons" id="noteadd">add</i></div>
+            </div>
+        <div id="maindivin">
+
+        </div>
+    </div>
+        </div>
+
+
+        <!-- --------------------------------quick ball menu--------------------------------------------- -->
+
+
+        <div id="optionout1" class="optionout">
+            <div id="options1" class="optionsclass">+</div>
+        </div>
+        <div id="optionout2" class="optionout">
+            <div id="options2" class="optionsclass1"><i class="material-icons" id="noteadd">note_add</i></div>
+        </div>
+        <div id="optionout3" class="optionout">
+            <div id="options3" class="optionsclass1"><i class="material-icons" id="noteadd">star</i></div>
+        </div>
+        <div id="optionout4" class="optionout">
+            <div id="options4" class="optionsclass1"><i class="material-icons" id="noteadd">dark_mode</i></div>
+        </div>
+        <div id="optionout5" class="optionout">
+            <div id="options5" class="optionsclass1">-</div>
+        </div>
+        <div id="optionout6" class="optionout">
+            <div id="options6" class="optionsclass1">-</div>
+        </div>
+    </main>
+
+    <!-- --------------------------------footer--------------------------------------------- -->
+
+
+
+    <footer> &copy; Rahul Raverkar : all right reserved </footer>
+
+    <script src="/noteit.js"></script>
+
+</body>
+
+</html>
