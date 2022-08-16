@@ -589,7 +589,9 @@ function check_mail(mail){
     }
     let namein1=document.getElementById(mail).value;
     let notall1=/[@.]/g;
-    let incl1=namein1.match(notall1);
+    let arr=namein1.match(notall1);
+    let setv=new Set(arr)
+    let incl1=Array.from(setv)
     if(incl1==null || incl1.length!=2 || namein1.length<5 || alredyRegister){
         if(alredyRegister){alert_box('Email id alrady present' , 'rgba(255, 0, 0, .7)');}
         else{alert_box('Enter proper email' , 'rgba(255, 0, 0, .7)');}
