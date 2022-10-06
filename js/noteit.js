@@ -2336,7 +2336,7 @@ function aboutcont(){
 
         <div class='progbox'>
         <div class='progname'>JavaScript</div>
-        <div class='progdetail'>Javascript is used to createct this web page dynamic and interactive. Because JavaScript is the most powerfull and effecting for web pages as well as compatible to all the browser as well as I want project creation with pure JS so I chose JavaScript. </div>
+        <div class='progdetail'>Javascript is used to createct this web page dynamic and interactive. Because JavaScript is the most powerfull and effecting for web pages as well as compatible to all the browser. Also I want project creation with pure JS so I choose JavaScript. </div>
         </div>
         `
         
